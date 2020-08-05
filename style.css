@@ -1,0 +1,11 @@
+header {
+    padding: 5px;
+}
+
+a {
+    float: left;
+}
+
+#timer {
+    text-align: right;
+}
