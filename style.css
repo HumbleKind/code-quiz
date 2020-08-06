@@ -10,10 +10,11 @@ a {
     text-align: right;
 }
 
+/* clear float after being used in header element */
 main {
     clear: both;
 }
 
-.container {
+#start-quiz {
     text-align: center;
 }
