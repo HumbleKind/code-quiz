@@ -3,10 +3,11 @@ var timerEl = document.querySelector("#timer");
 var secondsLeft = 60;
 
 // main variables ...
+var startQuiz = document.querySelector("#start-quiz");
 var startBttn = document.querySelector("#start-button");
 
 // countdown timer initial set point ...
-timerEl.textContent = "Time: " + secondsLeft;
+timerEl.textContent = "Time: 0";
 
 // countdown timer functionality ...
 function setTime() {
@@ -23,4 +24,7 @@ function setTime() {
 }
 
 // start button functionality ...
-startBttn.addEventListener("click", setTime);
+startBttn.addEventListener("click", function() {
+    startQuiz.classList.add("hide");
+    setTime();
+});
