@@ -9,3 +9,7 @@ a {
 #timer {
     text-align: right;
 }
+
+main {
+    clear: both;
+}
