@@ -1,5 +1,5 @@
 header {
-    padding: 5px;
+    padding: 10px;
 }
 
 a {
@@ -17,4 +17,8 @@ main {
 
 #start-quiz {
     text-align: center;
+}
+
+button {
+    margin: 5px;
 }

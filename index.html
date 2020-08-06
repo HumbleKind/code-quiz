@@ -34,6 +34,7 @@
     <head>
         <meta charset="UTF-8" />
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css" />
         <title>Code Quiz</title>
     </head>
@@ -53,17 +54,22 @@
                 <p>Try to answer the following code-related questions within the time limit.<br>Keep in mind that incorrect answers will penalize your score/ time by ten seconds!</p>
                 
                 <!-- button needs to start timer, hide start quiz container, and show first question container -->
-                <button id="start-button">Start Quiz</button>
+                <button type="button" id="start-button" class="btn btn-primary">Start Quiz</button>
             </div>
             <div id="q1" class="container">
-                <h3>Comonly used data types<br>DO NOT include:</h3>
-                <button>1. strings</button><br>
-                <button>2. booleans</button><br>
-                <button>3. alerts</button><br>
-                <button>4. numbers</button><br>
+                <h3>Commonly used data types<br>DO NOT include:</h3>
+                <button type="button" class="btn btn-primary">1. strings</button><br>
+                <button type="button" class="btn btn-primary">2. booleans</button><br>
+                <button type="button" class="btn btn-primary">3. alerts</button><br>
+                <button type="button" class="btn btn-primary">4. numbers</button><br>
             </div>
         </main>
 
         <script src="./script.js"></script>
+
+        <!-- 8-6-20 Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>
