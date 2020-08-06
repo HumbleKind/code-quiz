@@ -1,6 +1,14 @@
+// header variables ...
 var timerEl = document.querySelector("#timer");
 var secondsLeft = 60;
 
+// main variables ...
+var startBttn = document.querySelector("#start-button");
+
+// countdown timer initial set point ...
+timerEl.textContent = "Time: " + secondsLeft;
+
+// countdown timer functionality ...
 function setTime() {
     var timerInterval = setInterval(function() {
         secondsLeft--;
@@ -14,4 +22,5 @@ function setTime() {
     }, 1000);
 }
 
-setTime();
+// start button functionality ...
+startBttn.addEventListener("click", setTime);
