@@ -13,3 +13,7 @@ a {
 main {
     clear: both;
 }
+
+.container {
+    text-align: center;
+}
