@@ -34,19 +34,25 @@
     <header>
         <meta charset="UTF-8" />
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./style.css" />
         <title>Code Quiz</title>
     </header>
 
     <body>
         <!-- 'header' to contain link to scores file and countdown timer -->
         <header>
-            <a href="scores.html">View High Scores</a>
+            <a href="./scores.html">View High Scores</a>
             <div id="timer"></div>
         </header>
 
         <!-- 'main' to contain intro, questions, and result -->
-        <main></main>
+        <main>
+            <div id="start-quiz" class="container">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer the following code-related questions with the time limit. Keep in mind that incorrect answers will penalize your score/ time by ten seconds!</p>
+                <button>Start Quiz</button>
+            </div>
+        </main>
 
         <script src="./script.js"></script>
     </body>
