@@ -1,10 +1,11 @@
 // header variables ...
 var timerEl = document.querySelector("#timer");
-var secondsLeft = 60;
+var secondsLeft = 10;
 
 // main variables ...
 var startQuiz = document.querySelector("#start-quiz");
 var startBttn = document.querySelector("#start-button");
+var q1Div = document.querySelector("#q1")
 
 // countdown timer initial set point ...
 timerEl.textContent = "Time: 0";
@@ -18,6 +19,7 @@ function setTime() {
         if(secondsLeft === 0) {
             clearInterval(timerInterval);
             alert("Time's up!");
+            location.reload()
         }
 
     }, 1000);
@@ -26,5 +28,6 @@ function setTime() {
 // start button functionality ...
 startBttn.addEventListener("click", function() {
     startQuiz.classList.add("hide");
+    q1Div.classList.remove("hide");
     setTime();
 });

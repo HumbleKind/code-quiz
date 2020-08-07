@@ -13,6 +13,7 @@ a {
 /* clear float after being used in header element */
 main {
     clear: both;
+    margin-top: 100px;
 }
 
 .hide {

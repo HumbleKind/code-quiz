@@ -49,6 +49,7 @@
         <!-- 'main' to contain intro, questions, and result -->
         <!-- QUESTION: what is the best use of id's and classes -->
         <main>
+            <!-- start quiz div element -->
             <div id="start-quiz" class="container">
                 <h1>Coding Quiz Challenge</h1>
                 <p>Try to answer the following code-related questions within the time limit.<br>Keep in mind that incorrect answers will penalize your score/ time by ten seconds!</p>
@@ -56,14 +57,23 @@
                 <!-- button needs to start timer, hide start quiz container, and show first question container -->
                 <button type="button" id="start-button" class="btn btn-primary">Start Quiz</button>
             </div>
-            
+
             <!-- question 1 div element -->
-            <div id="q1" class="container">
+            <div id="q1" class="container hide">
                 <h3>Commonly used data types<br>DO NOT include:</h3>
                 <button type="button" class="btn btn-primary">1. strings</button><br>
                 <button type="button" class="btn btn-primary">2. booleans</button><br>
                 <button type="button" class="btn btn-primary">3. alerts</button><br>
                 <button type="button" class="btn btn-primary">4. numbers</button><br>
+            </div>
+
+            <!-- question 2 div element -->
+            <div id="q1" class="container hide">
+                <h3>The condition in an if/ else statement<br>is enclosed within _____.</h3>
+                <button type="button" class="btn btn-primary">1. quotes</button><br>
+                <button type="button" class="btn btn-primary">2. curly brackets</button><br>
+                <button type="button" class="btn btn-primary">3. parentheses</button><br>
+                <button type="button" class="btn btn-primary">4. square brackets</button><br>
             </div>
         </main>
 
