@@ -7,6 +7,7 @@ var startQuiz = document.querySelector("#start");
 var startBttn = document.querySelector("#start-button");
 var q1Div = document.querySelector("#q1");
 var q2Div = document.querySelector("#q2");
+var q3Div = document.querySelector("#q3");
 
 // countdown timer initial set point ...
 timerEl.textContent = "Time: 0";
@@ -38,5 +39,20 @@ document.getElementById("q1").addEventListener("click", function(event) {
     if(event.target.matches("button")) {
         q1Div.classList.add("hide");
         q2Div.classList.remove("hide");
+    }
+});
+
+// QUESTION: which code is cleaner ^^ or ...
+// q1Div.addEventListener("click", function(event) {
+//     if(event.target.matches("button")) {
+//         q1Div.classList.add("hide");
+//         q2Div.classList.remove("hide");
+//     }
+// });
+
+document.getElementById("q2").addEventListener("click", function(event) {
+    if(event.target.matches("button")) {
+        q2Div.classList.add("hide");
+        q3Div.classList.remove("hide");
     }
 });
