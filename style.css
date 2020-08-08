@@ -20,7 +20,7 @@ main {
     display: none;
 }
 
-#start {
+#start, #scores {
     text-align: center;
 }
 
