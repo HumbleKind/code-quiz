@@ -3,9 +3,10 @@ var timerEl = document.querySelector("#timer");
 var secondsLeft = 10;
 
 // main variables ...
-var startQuiz = document.querySelector("#start-quiz");
+var startQuiz = document.querySelector("#start");
 var startBttn = document.querySelector("#start-button");
-var q1Div = document.querySelector("#q1")
+var q1Div = document.querySelector("#q1");
+var q2Div = document.querySelector("#q2");
 
 // countdown timer initial set point ...
 timerEl.textContent = "Time: 0";
@@ -30,4 +31,12 @@ startBttn.addEventListener("click", function() {
     startQuiz.classList.add("hide");
     q1Div.classList.remove("hide");
     setTime();
+});
+
+// functionality to advance questions when an answer button is selected ...
+document.getElementById("q1").addEventListener("click", function(event) {
+    if(event.target.matches("button")) {
+        q1Div.classList.add("hide");
+        q2Div.classList.remove("hide");
+    }
 });
