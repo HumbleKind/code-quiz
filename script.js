@@ -9,6 +9,7 @@ var q1Div = document.querySelector("#q1");
 var q2Div = document.querySelector("#q2");
 var q3Div = document.querySelector("#q3");
 var q4Div = document.querySelector("#q4");
+var q5Div = document.querySelector("#q5");
 
 // countdown timer initial set point ...
 timerEl.textContent = "Time: 0";
@@ -62,5 +63,12 @@ document.getElementById("q3").addEventListener("click", function(event) {
     if(event.target.matches("button")) {
         q3Div.classList.add("hide");
         q4Div.classList.remove("hide");
+    }
+});
+
+document.getElementById("q4").addEventListener("click", function(event) {
+    if(event.target.matches("button")) {
+        q4Div.classList.add("hide");
+        q5Div.classList.remove("hide");
     }
 });
