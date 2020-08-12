@@ -1,6 +1,6 @@
 // header variables ...
 var timerEl = document.querySelector("#timer");
-var secondsLeft = 20;
+var secondsLeft = 60;
 
 // main variables ...
 var startQuiz = document.querySelector("#start");
@@ -39,6 +39,9 @@ startBttn.addEventListener("click", function() {
 
 // functionality to advance questions when an answer button is selected ...
 document.getElementById("q1").addEventListener("click", function(event) {
+    if(event.target.matches("#incorrectAnswer")) {
+        secondsLeft = secondsLeft - 5;
+    }
     if(event.target.matches("button")) {
         q1Div.classList.add("hide");
         q2Div.classList.remove("hide");
