@@ -93,5 +93,7 @@ document.getElementById("q5").addEventListener("click", function(event) {
     if(event.target.matches("button")) {
         q5Div.classList.add("hide");
         done.classList.remove("hide");
+        console.log(secondsLeft);
+        document.getElementById("score").innerHTML = secondsLeft;
     }
 });
