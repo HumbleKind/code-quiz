@@ -27,3 +27,7 @@ main {
 button {
     margin: 5px;
 }
+
+#score {
+    font-size: x-large;
+}
