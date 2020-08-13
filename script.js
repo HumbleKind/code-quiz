@@ -57,6 +57,9 @@ document.getElementById("q1").addEventListener("click", function(event) {
 // });
 
 document.getElementById("q2").addEventListener("click", function(event) {
+    if(event.target.matches("#incorrectAnswer")) {
+        secondsLeft = secondsLeft - 5;
+    }
     if(event.target.matches("button")) {
         q2Div.classList.add("hide");
         q3Div.classList.remove("hide");
@@ -64,6 +67,9 @@ document.getElementById("q2").addEventListener("click", function(event) {
 });
 
 document.getElementById("q3").addEventListener("click", function(event) {
+    if(event.target.matches("#incorrectAnswer")) {
+        secondsLeft = secondsLeft - 5;
+    }
     if(event.target.matches("button")) {
         q3Div.classList.add("hide");
         q4Div.classList.remove("hide");
@@ -71,6 +77,9 @@ document.getElementById("q3").addEventListener("click", function(event) {
 });
 
 document.getElementById("q4").addEventListener("click", function(event) {
+    if(event.target.matches("#incorrectAnswer")) {
+        secondsLeft = secondsLeft - 5;
+    }
     if(event.target.matches("button")) {
         q4Div.classList.add("hide");
         q5Div.classList.remove("hide");
@@ -78,6 +87,9 @@ document.getElementById("q4").addEventListener("click", function(event) {
 });
 
 document.getElementById("q5").addEventListener("click", function(event) {
+    if(event.target.matches("#incorrectAnswer")) {
+        secondsLeft = secondsLeft - 5;
+    }
     if(event.target.matches("button")) {
         q5Div.classList.add("hide");
         done.classList.remove("hide");
