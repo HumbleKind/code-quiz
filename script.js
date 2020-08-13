@@ -1,5 +1,6 @@
 // header variables ...
 var timerEl = document.querySelector("#timer");
+var timerInterval;
 var secondsLeft = 60;
 
 // main variables ...
@@ -17,7 +18,7 @@ timerEl.textContent = "Time: 0";
 
 // countdown timer functionality ...
 function setTime() {
-    var timerInterval = setInterval(function() {
+    timerInterval = setInterval(function() {
         secondsLeft--;
         timerEl.textContent = "Time: " + secondsLeft;
 
@@ -91,9 +92,10 @@ document.getElementById("q5").addEventListener("click", function(event) {
         secondsLeft = secondsLeft - 5;
     }
     if(event.target.matches("button")) {
+        clearInterval(timerInterval);
         q5Div.classList.add("hide");
         done.classList.remove("hide");
-        console.log(secondsLeft);
+        // console.log(secondsLeft);
         document.getElementById("score").innerHTML = secondsLeft;
     }
 });
